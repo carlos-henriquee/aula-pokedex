@@ -1,55 +1,110 @@
 * {
-    margin:0;
-    padding:0;
-    font-family:Helvetica;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
 }
 body {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
-header{
-    height: 20px;
-    border-bottom: 1px solid gray;
-    text-align: right;
-    padding-top: 80px;
-    background-color:#ccc;
+header {
+  height: 20px;
+  border-bottom: 1px solid gray;
+  text-align: right;
+  padding-top: 80px;
+  background-color: #ccc;
 }
 
 header a {
-    text-transform: uppercase;
-    margin-right: 10px;
-    margin-left: 10px;
-    color:#000000;
-    text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #000000;
+  text-decoration: none;
 }
 
-header a:hover{
-   font-weight: bold;
+header a:hover {
+  font-weight: bold;
 }
-
-#conteudo{
-    width: 65%;
-    min-height: 400px;
-    margin: 35px auto;
+hr{
+  display: none;
+}
+#conteudo {
+  width: 900px;
+  min-height: 400px;
+  margin: 80px auto;
 }
 .info-principal {
-    min-height: 200px;
-    display: flex;
+  min-height: 300px;
+  display: flex;
 }
 .imagem-info {
-    height: 200px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  height: 200px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .imagem-info > img {
-    width: 300px;
+  width: 300px;
 }
 .texto-info {
-    background-color: burlywood;
-    min-height: 200px;
+  
+  min-height: 200px;
+  width: 50%;
+  padding: 5px;
+}
+.texto-info-secundaria{
+    
     width: 50%;
 }
-/**/ 
+.imagem-info-secundaria{
+    width: 50%;
+}
+.imagem-info-secundaria img{
+    width: 100%;
+}
+.info-secundaria{
+    display: flex;
+}
+footer{
+  border-top: 1px solid #000;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  
+}
+
+@media screen and (max-width:600px){
+  header .links{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .info-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .imagem-info{
+    height: 300px;
+  }
+  .texto-info{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 60px;
+  }
+  .info-secundaria{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px; 
+  }
+
+  hr{
+    display: block;
+  }
+}
